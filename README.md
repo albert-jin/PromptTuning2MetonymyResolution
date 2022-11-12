@@ -44,8 +44,9 @@ respectively. All numbers are measured using %.
 learning and full-data supervised learning. All results are averaged over 5 runs to maintain
 experimental authenticity.
 
-[![](/assets/pPromptMRvariants.PNG "three PromptMR variants' performance")][three PromptMR variants' performance]
+[![](/assets/PromptMRvariants.PNG "three PromptMR variants' performance")][three PromptMR variants' performance]
 
+# Thank you!
 ```
-
+:sunglasses: :pray: :innocent: :heartpulse: :heartpulse: :heartpulse: 	:stuck_out_tongue_closed_eyes:
 ```
