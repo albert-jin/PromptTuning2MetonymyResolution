@@ -95,7 +95,7 @@ def calculate_metof1_literal_acc(y_true, y_pred):
         literal_f1 = 0
     else:
         literal_f1 = 2*literal_prec*literal_rec/(literal_rec + literal_prec)
-    return metonymic_f1+0.002, literal_f1+0.002, acc+0.003
+    return metonymic_f1, literal_f1, acc
 
 
 def set_logger(log_path):
