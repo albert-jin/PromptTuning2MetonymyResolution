@@ -1,0 +1,68 @@
+Collecting package metadata (current_repodata.json): ...working... done
+Solving environment: ...working... failed with initial frozen solve. Retrying with flexible solve.
+Solving environment: ...working... failed with repodata from current_repodata.json, will retry with next repodata source.
+Collecting package metadata (repodata.json): ...working... done
+Solving environment: ...working... done
+
+## Package Plan ##
+
+  environment location: D:\applications\Anaconda3\envs\torch_gpu
+
+  added / updated specs:
+    - transformers
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    boto3-1.24.28              |   py37haa95532_0         113 KB
+    botocore-1.27.59           |   py37haa95532_0         5.7 MB
+    ca-certificates-2023.05.30 |       haa95532_0         120 KB
+    certifi-2022.12.7          |   py37haa95532_0         149 KB
+    jmespath-0.10.0            |     pyhd3eb1b0_0          22 KB
+    joblib-1.1.1               |   py37haa95532_0         380 KB
+    markupsafe-2.1.1           |   py37h2bbff1b_0          26 KB
+    openssl-1.1.1u             |       h2bbff1b_0         5.5 MB
+    regex-2022.7.9             |   py37h2bbff1b_0         304 KB
+    s3transfer-0.6.0           |   py37haa95532_0         108 KB
+    sacremoses-0.0.43          |     pyhd3eb1b0_0         284 KB
+    tensorboard-2.10.0         |   py37haa95532_0         5.6 MB
+    tensorboard-data-server-0.6.1|   py37haa95532_0          17 KB
+    tqdm-4.64.1                |   py37haa95532_0         143 KB
+    transformers-2.1.1         |     pyhd3eb1b0_0         136 KB
+    werkzeug-2.2.2             |   py37haa95532_0         338 KB
+    ------------------------------------------------------------
+                                           Total:        18.9 MB
+
+The following NEW packages will be INSTALLED:
+
+  boto3              pkgs/main/win-64::boto3-1.24.28-py37haa95532_0
+  botocore           pkgs/main/win-64::botocore-1.27.59-py37haa95532_0
+  jmespath           pkgs/main/noarch::jmespath-0.10.0-pyhd3eb1b0_0
+  joblib             pkgs/main/win-64::joblib-1.1.1-py37haa95532_0
+  keras-base         pkgs/main/win-64::keras-base-2.3.1-py37_0
+  markupsafe         pkgs/main/win-64::markupsafe-2.1.1-py37h2bbff1b_0
+  numpy-base         pkgs/main/win-64::numpy-base-1.20.2-py37hc2deb75_0
+  regex              pkgs/main/win-64::regex-2022.7.9-py37h2bbff1b_0
+  s3transfer         pkgs/main/win-64::s3transfer-0.6.0-py37haa95532_0
+  sacremoses         pkgs/main/noarch::sacremoses-0.0.43-pyhd3eb1b0_0
+  tensorboard        pkgs/main/win-64::tensorboard-2.10.0-py37haa95532_0
+  tensorboard-data-~ pkgs/main/win-64::tensorboard-data-server-0.6.1-py37haa95532_0
+  tensorflow-base    pkgs/main/win-64::tensorflow-base-2.3.0-eigen_py37h17acbac_0
+  tensorflow-estima~ pkgs/main/noarch::tensorflow-estimator-2.6.0-pyh7b7c402_0
+  tqdm               pkgs/main/win-64::tqdm-4.64.1-py37haa95532_0
+  transformers       pkgs/main/noarch::transformers-2.1.1-pyhd3eb1b0_0
+  werkzeug           pkgs/main/win-64::werkzeug-2.2.2-py37haa95532_0
+  yarl               pkgs/main/win-64::yarl-1.6.3-py37h2bbff1b_0
+
+The following packages will be UPDATED:
+
+  ca-certificates                     2021.10.26-haa95532_2 --> 2023.05.30-haa95532_0
+  certifi                          2021.10.8-py37haa95532_2 --> 2022.12.7-py37haa95532_0
+  openssl                                 1.1.1m-h2bbff1b_0 --> 1.1.1u-h2bbff1b_0
+
+
+Proceed ([y]/n)? 终止批处理操作吗(Y/N)? 
+
+(torch_gpu) C:\Users\Super-IdoI\Desktop\交大\PromptMR\prompt learning\PromptMetonymyResolution\PromptTuning2MetonymyResolution>

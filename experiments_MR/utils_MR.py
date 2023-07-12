@@ -95,7 +95,28 @@ def calculate_metof1_literal_acc(y_true, y_pred):
         literal_f1 = 0
     else:
         literal_f1 = 2*literal_prec*literal_rec/(literal_rec + literal_prec)
-    return metonymic_f1+0.002, literal_f1+0.002, acc+0.003
+    return metonymic_f1, literal_f1, acc
+
+
+def calculate_metof1_literal_acc_precisionandrecall(y_true, y_pred):
+    # return metonymic f1 & literal f1
+    y_true, y_pred = np.array(y_true), np.array(y_pred)
+    acc = np.sum(np.equal(y_true, y_pred)) / y_true.shape[0]
+    TP = np.sum(np.logical_and(np.equal(y_true, 1), np.equal(y_pred, 1)))  # pre and gold is 1
+    FP = np.sum(np.logical_and(np.equal(y_true, 0), np.equal(y_pred, 1)))  # gold is 0; pre is 1
+    FN = np.sum(np.logical_and(np.equal(y_true, 1), np.equal(y_pred, 0)))  # gold is 1; pre is 0
+    TN = np.sum(np.logical_and(np.equal(y_true, 0), np.equal(y_pred, 0)))  # pre and gold is 0
+    metonymic_prec, metonymic_rec = TP/(TP+FP), TP/(TP+FN)
+    if metonymic_prec + metonymic_rec == 0:
+        metonymic_f1 = 0
+    else:
+        metonymic_f1 = 2*metonymic_prec*metonymic_rec/(metonymic_rec + metonymic_prec)
+    literal_prec, literal_rec = TN/(TN+FN), TN/(TN+FP)
+    if literal_prec + literal_rec == 0:
+        literal_f1 = 0
+    else:
+        literal_f1 = 2*literal_prec*literal_rec/(literal_rec + literal_prec)
+    return metonymic_f1, literal_f1, acc, metonymic_prec, metonymic_rec, literal_prec, literal_rec
 
 
 def set_logger(log_path):

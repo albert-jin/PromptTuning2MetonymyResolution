@@ -10,5 +10,7 @@ datasets
 rouge==1.0.0
 pyarrow
 scipy
+tokenizers
 
 # Successfully uninstalled transformers-2.2.2
+# Successfully uninstalled transformers-3.4.0
